@@ -1,0 +1,149 @@
+/*********Defaults*************/
+nav, header, footer {
+    display: block
+}
+
+body {
+    background-color: #ddd;
+    line-height: 1;
+    margin: 0;
+    font-family: serif;
+}
+
+.header {
+    font-family: fantasy;
+}
+
+.header h1 { font-size: 2.5rem; }
+.header h2 { font-size: 1.25rem; }
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.67%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.67%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.67%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.67%;}
+.col-12 {width: 100%;}
+
+footer {
+/*    place-holder      */
+}
+
+
+/***********Navbar*************/
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif
+}
+
+ul.navbar li {
+    list-style: none;
+    float: left;
+    width: 20%;
+}
+
+ul.navbar li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #eee;
+}
+
+ul.navbar li.home a {
+    background-color: #703574;
+}
+
+ul.navbar li.bronze a {
+    background-color: #91b43c;
+}
+
+ul.navbar li.silver a {
+    background-color:  #369bd1;
+}
+
+ul.navbar li.gold a {
+    background-color: #f3b836;
+}
+
+ul.navbar li.more a {
+    background-color: #ca3b46;
+}
+
+ul.navbar li.home a:hover {
+    background-color: #eee;
+    color: #703574;
+    font-weight: bolder;
+}
+
+ul.navbar li.bronze a:hover {
+    background-color: #eee;
+    color: #91b43c;
+    font-weight: bolder;
+}
+
+ul.navbar li.silver a:hover {
+    background-color: #eee;
+    color: #369bd1;
+    font-weight: bolder;
+}
+
+ul.navbar li.gold a:hover {
+    background-color: #eee;
+    color: #f3b836;
+    font-weight: bolder;
+}
+
+ul.navbar li.more a:hover {
+    background-color: #eee;
+    color: #ca3b46;
+    font-weight: bolder;
+}
+
+ul.navbar li.lineovertext a {
+    text-decoration: overline;    
+}
+
+/***************Mobile******************/
+
+@media screen and (max-width: 680px) {
+    ul.navbar li {
+        font-size: 0.75rem;
+        vertical-align: middle;
+    }
+}
